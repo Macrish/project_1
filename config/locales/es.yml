@@ -1,0 +1,18 @@
+es:
+  hello_world: "Tere, Maailm!"
+  hello_flash: Tere, välk!
+  currency: "€"
+  product_price: "%{price} €"
+
+  success:
+    'true':  'cierto!'
+    'on':    'en!'
+    'false': 'falsa!'
+  failure:
+    true:    'cierto!'
+    off:     'apagado!'
+    false:   'falsa!'
+
+  time:
+    formats:
+      short: "1 vez alrededor del mundo"

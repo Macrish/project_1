@@ -1,0 +1,17 @@
+pirate:
+  hello_world: Ahoy World
+  hello_flash: Ahoy Flash
+  currency: "€"
+
+  success:
+    'true':  'True! (pirate)'
+    'on':    'On! (pirate)'
+    'false': 'False! (pirate)'
+  failure:
+    true:    'True! (pirate)'
+    off:     'Off! (pirate)'
+    false:   'False! (pirate)'
+
+  time:
+    formats:
+      short: "arrrround %H'ish"

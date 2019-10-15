@@ -1,0 +1,15 @@
+<h1><%= t :hello_world %></h1>
+<p><%= t :hello_flash %></p>
+<p>1.000,000<%= t :currency %></p>
+<h2>Product price</h2>
+<p><%= t :product_price %></p>
+<h4 style="color:red">Flash from controller welcome/index: <%= flash[:notice] %></h4>
+
+<h2>Displaying keys in 'config/locales/en.yml'</h2>
+<%= I18n.t 'success.true' %><br>
+<%= I18n.t 'success.on' %><br>
+<%= I18n.t 'success.false' %><br>
+<%= I18n.t 'failure.true' %><br>
+<%= I18n.t 'failure.false' %><br>
+
+<p  style="color:blue">Add data/time format: <%= l Time.now, format: :short %></p>
