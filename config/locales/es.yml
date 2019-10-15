@@ -16,3 +16,8 @@ es:
   time:
     formats:
       short: "1 vez alrededor del mundo"
+
+  #ленивый поиск
+  welcome:
+    index:
+      title: "Título"

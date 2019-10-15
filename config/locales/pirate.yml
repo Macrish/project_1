@@ -15,3 +15,7 @@ pirate:
   time:
     formats:
       short: "arrrround %H'ish"
+
+  welcome:
+    index:
+      title: "Pirate title"
