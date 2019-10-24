@@ -5,7 +5,22 @@ Rails.application.routes.draw do
 	# get 'welcome/show'
 	#match without methods -> ArgumentError
 	# match 'welcome/show'
-	match 'welcome/show', to: 'welcome#show', via: [:get]
+	
+
+
+
+	# DRY
+	scope path: '/welcome', controller: :welcome do
+		get 'show', to: :show
+	end
+
+	#hard code
+	# match 'welcome/show', to: 'welcome#show', via: [:get]
+
+
+
+
+
 	get '/:locale', to: 'welcome#index'
 
 	resources :posts
