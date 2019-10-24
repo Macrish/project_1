@@ -12,5 +12,5 @@ Rails.application.routes.draw do
 	# http://localhost:3000/?locale=pirate to switch languages
  #  scope "/:locale" do
  #  	get 'welcome/index'
-	# end
- end
+ #end
+end
