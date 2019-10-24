@@ -23,4 +23,7 @@ class WelcomeController < ApplicationController
 		#0.0s more productive
 		# logger.debug { "Person attributes hash: #{aaa}" }
   end
+
+  def show
+  end
 end
