@@ -30,4 +30,29 @@ Rails.application.routes.draw do
  #end
 
 	get "/hello", to: proc { |env| [200, {}, ["Hello world"]] }
+
+	# resources :auctions do
+	# 	resources :bids
+	# 	resources :comments
+	# 	resources :image_attachments, only: :index
+	# end
+	
+	# resources :bids do
+	# 	resources :comments
+	# end
+	
+	#To eliminate code duplication and to encapsulate shared behavior add concern
+	concern :commentable do
+		resources :comments
+	end
+
+	concern :image_attachable do
+		resources :image_attachments, only: :index
+	end
+
+	resources :auctions, concerns: [:commentable, :image_attachable] do
+		resources :bids
+	end
+
+	resources :bids, concerns: :commentable
 end
