@@ -25,5 +25,8 @@ class WelcomeController < ApplicationController
   end
 
   def show
+    # render text
+    # render plain: 'Submission accepted'
+    redirect_to "http://www.rubyonrails.org"
   end
 end

@@ -40,19 +40,23 @@ Rails.application.routes.draw do
 	# resources :bids do
 	# 	resources :comments
 	# end
-	
+
 	#To eliminate code duplication and to encapsulate shared behavior add concern
-	concern :commentable do
-		resources :comments
-	end
+	# concern :commentable do
+	# 	resources :comments
+	# end
 
-	concern :image_attachable do
-		resources :image_attachments, only: :index
-	end
+	# concern :image_attachable do
+	# 	resources :image_attachments, only: :index
+	# end
 
-	resources :auctions, concerns: [:commentable, :image_attachable] do
-		resources :bids
-	end
+	# resources :auctions, concerns: [:commentable, :image_attachable] do
+	# 	resources :bids
+	# end
 
-	resources :bids, concerns: :commentable
+	# resources :bids, concerns: :commentable
+	# /projects/nuevo(.:format)
+	# resources :projects, path_names: { new: 'nuevo', edit: 'cambiar' }
+	# images#index
+	# resources :photos, controller: "images"
 end
