@@ -2,7 +2,9 @@
 
 <p>
   <strong>Starts at:</strong>
-  <%= @event.starts_at %>
+  <%= @event.starts_at %><br>
+  <%= @event.repeats %><br>
+  <%= @event.repeats_end %>
 </p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |

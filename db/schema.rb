@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2019_11_01_075824) do
 
   create_table "events", force: :cascade do |t|
     t.date "starts_at"
-    t.date "repeats"
+    t.boolean "repeats"
     t.date "repeats_end"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

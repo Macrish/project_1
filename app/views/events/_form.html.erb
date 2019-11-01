@@ -16,7 +16,17 @@
     <%= form.date_select :starts_at %>
   </div>
 
+  <div class="field">
+    <%= form.label :repeats %>
+    <%= form.check_box :repeats %>
+  </div>
+
+  <div class="field">
+    <%= form.label :repeats_end %>
+    <%= form.date_select :repeats_end %>
+  </div>
+
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Save' %>
   </div>
 <% end %>
