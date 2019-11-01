@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :events
 	root 'welcome#index'
 	#redirect_to google
 	get 'welcome/index', to: redirect('https://google.com/')
@@ -59,4 +60,6 @@ Rails.application.routes.draw do
 	# resources :projects, path_names: { new: 'nuevo', edit: 'cambiar' }
 	# images#index
 	# resources :photos, controller: "images"
+
+	resources :events
 end
