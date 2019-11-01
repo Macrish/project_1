@@ -1,12 +1,15 @@
 class Event < ApplicationRecord
-	attr_accessor :repeats, :boolean
-	attr_accessor :repeats_end, :date
+	#repeats and repeats_end fields, which are not backed by columns in the database
+	#Since it leverages Rails’ battle tested built-in type conversion
 
-	def repeats=(val)
-		@repeats = (val == "1")
-	end
+	# attr_accessor :repeats, :boolean
+	# attr_accessor :repeats_end, :date
 
-	def repeats_end=(val)
-		@repeats_end = Date.new(*val.values)
-	end
+	# def repeats=(val)
+	# 	@repeats = (val == "1")
+	# end
+
+	# def repeats_end=(val)
+	# 	@repeats_end = Date.new(*val.values)
+	# end
 end
