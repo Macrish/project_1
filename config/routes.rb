@@ -1,36 +1,26 @@
 Rails.application.routes.draw do
   resources :events
 	root 'welcome#index'
-	#redirect_to google
-	get 'welcome/index', to: redirect('https://google.com/')
+	
 	# get 'welcome/show'
 	#match without methods -> ArgumentError
 	# match 'welcome/show'
-	
-
 
 
 	# DRY
 	scope path: '/welcome', controller: :welcome do
 		get 'show', to: :show
+		#redirect_to google
+		get 'index', to: redirect('https://google.com/')
 	end
 
 	#hard code
 	# match 'welcome/show', to: 'welcome#show', via: [:get]
 
 
-
-
-
 	get '/:locale', to: 'welcome#index'
 
-	resources :posts
-	# http://localhost:3000/?locale=pirate to switch languages
- #  scope "/:locale" do
- #  	get 'welcome/index'
- #end
-
-	get "/hello", to: proc { |env| [200, {}, ["Hello world"]] }
+	# get "/hello", to: proc { |env| [200, {}, ["Hello world"]] }
 
 	# resources :auctions do
 	# 	resources :bids
@@ -60,6 +50,4 @@ Rails.application.routes.draw do
 	# resources :projects, path_names: { new: 'nuevo', edit: 'cambiar' }
 	# images#index
 	# resources :photos, controller: "images"
-
-	resources :events
 end
