@@ -15,5 +15,7 @@ module Project1
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.assets.paths << "#{Rails.root}/app/assets/videos"
+    #set the default language
+    # config.i18n.default_locale = :pirate
   end
 end
