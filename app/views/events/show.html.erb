@@ -1,12 +1,14 @@
 <p id="notice"><%= notice %></p>
-
+<h1 style="color:<%= @event.color %>;">Event #<%= @event.id %></h1>
 <p>
   <strong>Starts at:</strong>
   <%= @event.starts_at %><br>
   <strong>Repeats:</strong>
   <%= @event.repeats %><br>
   <strong>Repeats end:</strong>
-  <%= @event.repeats_end %>
+  <%= @event.repeats_end %><br>
+  <strong>Color:</strong>
+  <%= @event.color %>
 </p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
