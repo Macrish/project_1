@@ -6,7 +6,13 @@ class WelcomeController < ApplicationController
   	#web-consele exsecute Ruby code
   	# console
 
+    #COOL CODE
   	flash[:notice] = t(:hello_flash)
+
+    #HARD CODE
+    flash[:notice] = "hard code"
+
+
   	#logger info
   	# logger.info "Processing the request..."
   	# logger.fatal "Terminating application, raised unrecoverable error!!!"

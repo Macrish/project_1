@@ -49,3 +49,7 @@ en:
   time:
     formats:
       short: "1 time around the world"
+
+  welcome:
+    index:
+      view_scope: "View Scope"

@@ -1,5 +1,15 @@
 <h1><%= t :hello_world %></h1>
+
+<!-- COOL CODE -->
 <p><%= t :hello_flash %></p>
+
+<!-- HARD CODE -->
+<p><%= flash[:notice] %></p>
+
+
+<p style="color: green"><%= l Time.now, format: :short %></p>
+<p><%= t '.view_scope' %></p>
+
 <p>1.000,000<%= t :currency %></p>
 <h2>Product price</h2>
 <p><%= t :product_price %></p>
