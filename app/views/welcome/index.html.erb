@@ -8,11 +8,16 @@
 
 
 <p style="color: green"><%= l Time.now, format: :short %></p>
-<p><%= t '.view_scope' %></p>
+<p><%= t '.view_scope' %></p><hr>
+
+<p>Pluralization: <%= I18n.t :inbox, count: 1 %> & <%= I18n.t :inbox, count: 10 %></p>
+
+<p>Interpolation: <%= I18n.t :thanks, name: 'Tanya' %></p>
+
+<h4>Product price</h4>
+<p><%= t :product_price, price: 1000 %></p><hr>
 
 <p>1.000,000<%= t :currency %></p>
-<h2>Product price</h2>
-<p><%= t :product_price %></p>
 <h4 style="color:red">Flash from controller welcome/index: <%= flash[:notice] %></h4>
 
 <h2>Displaying keys in 'config/locales/en.yml'</h2>

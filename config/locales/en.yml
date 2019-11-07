@@ -53,3 +53,10 @@ en:
   welcome:
     index:
       view_scope: "View Scope"
+
+  inbox: {
+    one: '1 message',
+    other: '%{count} messages'
+  }
+
+  thanks: 'Thanks %{name}!'
