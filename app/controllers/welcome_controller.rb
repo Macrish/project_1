@@ -33,6 +33,6 @@ class WelcomeController < ApplicationController
   def show
     # render text
     # render plain: 'Submission accepted'
-    redirect_to "http://www.rubyonrails.org"
+    # redirect_to "http://www.rubyonrails.org"
   end
 end

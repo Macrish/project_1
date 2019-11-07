@@ -30,7 +30,7 @@
 <p  style="color:blue">Add data/time format: <%= l Time.now, format: :short %></p>
 
 <%= t '.title' %>
-
+<%=link_to "Rails", "http://rubyonrails.org/", data: { confirm: "Are you sure?" } %>
 <!-- <script>alert('Hello');</script> -->
 <h1>Do you want to create a new event?</h1>
 <%= link_to 'New Event', new_event_path %> | <%= link_to 'Events', events_path %>

@@ -9,9 +9,9 @@ Rails.application.routes.draw do
 
 	# DRY
 	scope path: '/welcome', controller: :welcome do
-		get 'show', to: :show
+		get 'show'
 		#redirect_to google
-		get 'index', to: redirect('https://google.com/')
+		get 'index'
 	end
 
 	#hard code
